@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Text Generation using Trained Model</h1>
+        <h1 className='header'>Text Generation using Trained Model</h1>
         <div className="input-container">
           <textarea
             value={inputText}
@@ -56,6 +56,10 @@ function App() {
             {inputText}
             <span className="suggestion">{suggestedText}</span>
           </div>
+        <p class="name">EG/2020/3922 - Ekanayake E.M.S.D</p>
+        <p class="name">EG/2020/4035 - Kumari D.P.S.T.</p>
+        <p class="name">EG/2020/4036 - Kumari H.M.M.S</p>
+        <p class="name">EG/2020/4162 - Rathnayake R.M.B.T.M.</p>
         </div>
       </header>
     </div>
