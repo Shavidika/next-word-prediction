@@ -8,14 +8,14 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the trained model
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('next_word_prediction_model_medium_2.h5')
 
 # Load the tokenizer
-with open('tokenizer.json') as f:
+with open('tokenizer_medium_2.json') as f:
     tokenizer_json = f.read()
     tokenizer = tf.keras.preprocessing.text.tokenizer_from_json(tokenizer_json)
 
-max_length = 55
+max_length = 19
 
 @app.route('/predict', methods=['POST'])
 def predict():
