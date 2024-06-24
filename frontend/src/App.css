@@ -13,10 +13,16 @@
 .input-container {
   position: relative;
   width: 80%; /* Adjust width as needed */
+  
+}
+
+textarea {
+  border-radius: 10px; /* Adjust the radius to your preference */
 }
 
 .input-text {
   position: relative;
+  
   background-color: transparent;
   color: white;
   font-size: 16px;
@@ -32,8 +38,8 @@
 
 .suggestion-text {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 16px;
+  left: 9px;
   color: rgba(255, 255, 255, 0.5);
   white-space: pre-wrap; /* Preserve whitespace and line breaks */
   pointer-events: none; /* Make sure it doesn't block the textarea */
